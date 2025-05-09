@@ -289,7 +289,7 @@ if (isset($_POST['terminate'])) {
         </div>
     </div>
 
-    <footer class="footer">Atharv Mahajan (0827CS221056)</footer>
+    <footer class="footer">By Atharv Mahajan</footer>
     <script src="../public/script.js"></script>
 </body>
 </html>
