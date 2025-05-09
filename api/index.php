@@ -81,7 +81,7 @@ if (isset($_POST['terminate'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Tracker</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="header">EXPENSE TRACKER</div>
@@ -106,7 +106,7 @@ if (isset($_POST['terminate'])) {
 
         <div class="form-section">
             <h3>Add Transaction</h3>
-            <!-- Add the 'onsubmit' attribute to call the validateForm function -->
+            
             <form action="" method="POST" onsubmit="return validateForm(event)">
                 <input type="text" id="description" name="description" placeholder="Description" required>
                 <input type="number" step="0.01" id="amount" name="amount" placeholder="Amount" required>
