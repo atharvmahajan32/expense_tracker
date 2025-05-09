@@ -81,7 +81,138 @@ if (isset($_POST['terminate'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Tracker</title>
-    <link rel="stylesheet" href="../public/style.css">
+    <style>
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F4F4F9;
+            color: #333;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .header {
+            width: 100%;
+            padding: 15px;
+            background-color: #024950;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .main-container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border: 1px solid #AFDDE5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-container h2 {
+            text-align: center;
+            color: #003135;
+            margin-bottom: 20px;
+        }
+
+        .balance-container {
+            display: flex;
+            justify-content: space-around;
+            background-color: #AFDDE5;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #003135;
+            font-size: 18px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section, .transactions-section {
+            margin-bottom: 30px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form button, form select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #AFDDE5;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #024950;
+            color: #FFFFFF;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #964734;
+        }
+
+        .transactions-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .transactions-section table, .transactions-section th, .transactions-section td {
+            border: 1px solid #AFDDE5;
+        }
+
+        .transactions-section th, .transactions-section td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .transactions-section th {
+            background-color: #AFDDE5;
+        }
+
+        .transactions-section td.description {
+            max-width: 200px;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .delete-button {
+            background-color: #FF0000;
+            color: #FFFFFF;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .delete-button:hover {
+            background-color: #CC0000;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #024950;
+            color: #FFF;
+        }
+    </style>
 </head>
 <body>
     <div class="header">EXPENSE TRACKER</div>
