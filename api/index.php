@@ -218,7 +218,7 @@ if (isset($_POST['terminate'])) {
     <div class="header">EXPENSE TRACKER</div>
 
     <div class="main-container">
-        <h2>Track Your Money</h2>
+        <h2>TRACK YOUR MONEY</h2>
 
         <div class="balance-container">
             <div>
